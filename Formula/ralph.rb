@@ -5,21 +5,21 @@
 class Ralph < Formula
   desc "Ralph - AI agent loop runner"
   homepage "https://github.com/agentic-metallurgy/ralph"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentic-metallurgy/ralph/releases/download/v0.1.0/ralph_0.1.0_darwin_amd64.tar.gz"
-      sha256 "065e0c6dd98e523bf83f1d42396ef9def0c802cca23c12d2afead74b8c8b3fec"
+      url "https://github.com/agentic-metallurgy/ralph/releases/download/v0.1.1/ralph_0.1.1_darwin_amd64.tar.gz"
+      sha256 "7d19f1c232d106bbb4d1bbdbca18f00621046845015d817e597add344d742f40"
 
       def install
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentic-metallurgy/ralph/releases/download/v0.1.0/ralph_0.1.0_darwin_arm64.tar.gz"
-      sha256 "76fff6c008d3f158af99a0c8deff6d0c16045313698327e6dc42d975368de177"
+      url "https://github.com/agentic-metallurgy/ralph/releases/download/v0.1.1/ralph_0.1.1_darwin_arm64.tar.gz"
+      sha256 "af570299a58468a876cd065d6e948853e5aa843c7bbbc55da1fcc06f886db0ef"
 
       def install
         bin.install "ralph"
@@ -29,15 +29,15 @@ class Ralph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-metallurgy/ralph/releases/download/v0.1.0/ralph_0.1.0_linux_amd64.tar.gz"
-      sha256 "901610865dd550a16c633f7c4e3b96666ae25448619205f27651de543878b820"
+      url "https://github.com/agentic-metallurgy/ralph/releases/download/v0.1.1/ralph_0.1.1_linux_amd64.tar.gz"
+      sha256 "dfbbdc9ca5a894de3340a0cbfe0bc697cfa9503f43d0d60d4f219bd57a49fa6c"
       def install
         bin.install "ralph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentic-metallurgy/ralph/releases/download/v0.1.0/ralph_0.1.0_linux_arm64.tar.gz"
-      sha256 "434df3d9cbb4bb58b212c0df1e8ba9dd2ab65aa1c170f034f3e37d46be919ff2"
+      url "https://github.com/agentic-metallurgy/ralph/releases/download/v0.1.1/ralph_0.1.1_linux_arm64.tar.gz"
+      sha256 "20f8c20c19d78260060a85a1021d8f2b419b97e04963d96023b5a5f06f2bf240"
       def install
         bin.install "ralph"
       end
